@@ -29,7 +29,10 @@ module.exports.routes = {
   },
   'get /customer/new': 'CustomerController.new',
   'get /customer/create':'CustomerController.create',
-  'get /customer/show' : 'CustomerController.show'
+  'get /customer/show' : 'CustomerController.show',
+  'get /delete' : { view: 'customer/delete' },
+  'get /customer/delete' : 'CustomerController.delete',
+
 
 
   /***************************************************************************

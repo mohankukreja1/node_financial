@@ -1,1 +1,16 @@
-hello
+<center><h1>Customers List</h1></center>
+
+<%
+ for(var i=0;i<customer.length;i++){
+   %>
+<p  style="margin-left: 15px">
+  <b>Customer name:- </b> <%=customer[i].name%><br>
+  <b>Customer email:- </b> <%=customer[i].email%><br>
+  <b>Customer state:- </b> <%=customer[i].state%><br>
+</p>
+<%
+ }
+ %>
+
+
+<br><center><a href="/">Back</a></center>
